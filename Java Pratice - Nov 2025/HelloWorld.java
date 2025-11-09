@@ -1,5 +1,5 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello Arsalan from Java 21 + GitHub + VS Code Web!");
+        System.out.println("Hello I am trying to learn Java. First step is to connect to GitHub + VS Code Web");
     }
 }
