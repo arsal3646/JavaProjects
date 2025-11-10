@@ -11,12 +11,12 @@ public static void main(String args[])
 float base, height, area1, area2, area3;
 
 System.out.println("Please enter base of the triangle: ");
-Scanner sc = new Scanner(System.in);
-base = sc.nextFloat();
+Scanner sc_base = new Scanner(System.in);
+base = sc_base.nextFloat();
 
 System.out.println("Please enter height of the triangle: ");
-Scanner sc = new Scanner(System.in);
-height = sc.nextFloat();
+Scanner sc_height = new Scanner(System.in);
+height = sc_height.nextFloat();
 
 area1 = (base * height)*0.5f;   // f is must for float
 area2 = (1/2)*(base * height); // this will give wrong output because 1/2 will be treated as integers and will evaluate to zero
