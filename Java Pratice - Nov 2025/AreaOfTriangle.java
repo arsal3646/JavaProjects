@@ -20,7 +20,7 @@ height = sc_height.nextFloat();
 
 area1 = (base * height)*0.5f;   // f is must for float
 area2 = (1/2)*(base * height); // this will give wrong output because 1/2 will be treated as integers and will evaluate to zero
-area3 = (1/2)*(base * height); // mistake is fixed
+area3 = (1f/2f)*(base * height); // mistake is fixed
 
 System.out.println("Area1 of the given triangle is: "+area1);
 System.out.println("Area2 of the given triangle is: "+area2);
