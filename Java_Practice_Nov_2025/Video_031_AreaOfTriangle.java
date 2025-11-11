@@ -3,7 +3,7 @@
 import java.lang.*;
 import java.util.Scanner;
 
-class AreaOfTriangle
+class Video_031_AreaOfTriangle
 
 {
 public static void main(String args[])
