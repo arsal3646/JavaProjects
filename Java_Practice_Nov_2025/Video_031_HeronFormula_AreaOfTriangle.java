@@ -8,8 +8,8 @@ class Video_031_HeronFormula_AreaOfTriangle
 {
     public static void main (String args[])
     {
-        float a, b, c, s, area;    //a, b, c are three sides of triangle
-        
+        float a, b, c, s, area1;    //a, b, c are three sides of triangle
+        double area2;
 
         Scanner sc = new Scanner(System.in);
         
@@ -24,9 +24,11 @@ class Video_031_HeronFormula_AreaOfTriangle
 
         s = (a+b+c)/2f;
         
-        area = (float) Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        area1 = (float) Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        area2 = (double) Math.sqrt(s*(s-a)*(s-b)*(s-c));
 
-        System.out.println("Area of the triangle is: "+area);
+        System.out.println("Area of the triangle is: "+area1);
+        System.out.println("Area of the triangle is: "+area2);
 
 
     }
