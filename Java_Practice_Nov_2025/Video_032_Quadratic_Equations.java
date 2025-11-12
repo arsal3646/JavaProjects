@@ -11,7 +11,7 @@ class Video_032_Quadratic_Equations
 {
     public static void main(String args[])
     {
-        double a, b, c, r1, r2, Discriminant;    // double because Math.sqrt returns double type
+        double a, b, c, r1, r2, Discriminant;    // double because Math.sqrt returns double type.
    
         Scanner sc = new Scanner(System.in);
 
