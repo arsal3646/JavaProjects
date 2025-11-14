@@ -13,8 +13,8 @@ class Video_033_Cuboid
 
         area = area_back + area_bottom + area_front;
 
-        System.out.printf("Area is ":+area);
-        System.out.printf("Volume is "+volume);
+        System.out.printf("Area is: "+area);
+        System.out.printf("Volume is: "+volume);
     }
 
 }
