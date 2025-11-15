@@ -4,7 +4,7 @@
 
 import java.lang.*;
 
-class Video_40_Masking_And_Swapping
+class Video_040_Masking_And_Swapping
 {
     public static void main (String args[])
     {
