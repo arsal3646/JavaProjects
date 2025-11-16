@@ -24,7 +24,7 @@ class Video_040_Masking_And_Swapping
     d = d ^ e; 
     
     System.out.println("Using normal method - New value of a is: "+a+" while new value of b is: "+b);
-    System.out.println("Using Bitwise method - New value of d is: "+d+" while new value of e is: "+e);
+    System.out.println("\nUsing Bitwise method - New value of d is: "+d+" while new value of e is: "+e);
 
     // Challenge No.2: Perform Masking (OR Operation) and Merging (AND Operation)
 
@@ -39,8 +39,16 @@ class Video_040_Masking_And_Swapping
 
     int fourth = third & 0xFF;          // to get decimal value (not useful here)
 
+    
     String binary = String.format("%8s", Integer.toBinaryString(fourth)).replace(' ', '0'); // to show output as binary - I copied this code from chatGPT. Yet to learn how to do this.
-    System.out.println("The merged value is now equal to binary number "+binary_third+" and its decimal value is equivalent to "+fourth);
+
+    System.out.println("\nThe merged value is now equal to binary number "+binary_third+" and its decimal value is equivalent to "+fourth);
+
+    System.out.println("\nThe value using new method is: "+(third&0b11110000)+". This is wrong value because the value is in first four bits. We need to move it to right four bits to give the correct value.");  /*AND-ing will show which bits are 1 and which are 0. AND-ing will return those as 1 which are 1 already in 'third' */
+
+    System.out.println("\nAfter right-shift, the correct value using new method is: "+((third&0b11110000)>>4)+".");
+
+     System.out.println("\nThe initial value using new method is: "+(third&0b00001111)+"."); // AND-ing with the last four digits
 
     }
 }
